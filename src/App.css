@@ -1,38 +1,284 @@
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#menu {
+  padding: 50px;
+  z-index: 3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-menu {
+  /* background-color: black; */
+  background: linear-gradient(0deg, rgb(0, 2, 5) 100%, rgba(0, 3, 8, 0.2) 100%);
+  box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Sidebar {
+  position: absolute;
+  left: 0;
+  top: 140px;
+  transition: width 0.5s ease;
+  padding: 35px 20px;
+  z-index: 2;
+  border-radius: 10px;
+  /* color: white; */
+  background: linear-gradient(0deg, rgb(0, 2, 5) 85%, rgba(0, 3, 8, 0.2) 100%);
+  box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25);
+}
+
+.sidebar-items {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 30px;
+  padding: 0px;
+  z-index: 2;
+}
+
+.sidebar-items a {
+  text-decoration: none;
+  color: rgb(226, 223, 223);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.body-content {
+  position: absolute;
+  padding-top: 50px;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.home-intro {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 100px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  /* background-color: #03080f; */
+  background: linear-gradient(0deg, rgb(0, 2, 5) 35%, rgba(0, 3, 8, 0.5) 100%);
+  box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.25);
+}
+
+.home-intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 900;
+}
+
+.job-title {
+  font-size: 30px;
+}
+
+.about-myself {
+  color: darkgray;
+}
+
+.my_photo {
+  width: 350px;
+  height: 300px;
+  border-radius: 50px;
+  background-color: rgb(197, 238, 14);
+}
+
+.home-about {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding-bottom: 100px;
+}
+
+.home-about-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  font-weight: 300;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 100px;
+}
+
+.home-about-description {
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: x-large;
+}
+
+.home-services {
+  display: flex;
+  flex-direction: column;
+  background-color: #141e2c;
+  color: white;
+  /* background: linear-gradient(0deg,rgb(0, 2, 5)60%,
+    rgba(0, 3, 8, 0.2)100%);
+    box-shadow: 0 0 4px 0 rgb(0,0,0,.5);*/
+  padding-bottom: 100px;
+}
+
+.home-services-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  font-weight: 300;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 100px;
+}
+
+.home-services-description {
+  display: flex;
+  justify-content: center;
+}
+
+.home-service-lists{
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  gap: 30px;
+}
+
+.service-item {
+  margin-bottom: 30px;
+}
+
+.service-item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.service-item p {
+  font-size: 16px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.blogs{
+  display: flex;
+  flex-direction: column;
+}
+.blogs-description{
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  font-size: 30px;
+}
+
+.blogs-list{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-style: italic;
+  font-size: 25px;;
+  font-weight: 500;
+}
+
+.blogs-list a {
+  text-decoration: none;
+}
+
+.home-contact {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background: linear-gradient(0deg, rgb(0, 2, 5) 100%, rgba(0, 3, 8, 0.2) 100%);
+  box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.5);
+  padding-bottom: 50px;
+  margin-top: 100px;
+}
+
+.home-contact-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 200;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 50px;
+}
+.contact-icons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 481px) {
+  .home-intro {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 25px;
+    padding-top: 80px;
   }
-  to {
-    transform: rotate(360deg);
+  .my_photo {
+    height: 150px;
+    width: 150px;
+  }
+  .job-title {
+    font-size: 12px;
+  }
+  .home-about{
+    padding-bottom: 50px;
+  }
+  .home-services{
+    padding-bottom: 25px;
+  }
+  .home-service-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 0px
+  }
+  .service-item h2{
+    font-size: 16px;
+  }
+  .service-item p{
+    font-size: 14px;
+  }
+  .home-about-heading {
+    padding-top: 50px;
+    font-size: 35px;
+  }
+  .home-about-description {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: medium;
+  }
+  .home-services-heading {
+    padding-top: 50px;
+    font-size: 35px;
+  }
+  .home-services-description {
+    padding-left: 35px;
+    padding-right: 35px;
+
+  }
+  .blogs-description{
+    font-size: 20px;
+    text-align: center;
+  }
+  .blogs-list{
+    font-size: 20px;
+  }
+  .home-contact-heading {
+    padding-top: 50px;
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .job-title {
+    font-size: 20px;
+  }
+  .my_photo {
+    width: 250px;
+    height: 250px;
   }
 }
