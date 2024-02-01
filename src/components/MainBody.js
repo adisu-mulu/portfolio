@@ -1,6 +1,8 @@
 import React from "react";
 
 import my_photo from "../imgs/bg2.jpg";
+import {Envelope} from "react-bootstrap-icons";
+// import { BiPhoneCall } from 'bootstrap-icons';
 
 function MainBody() {
   return (
@@ -9,9 +11,13 @@ function MainBody() {
         <div className="home-intro-text">
           <h2>Adisu Mulu</h2>
           <p className="job-title">
-            Software engineer | Researcher | Lecturer @ Dilla University
+            Software engineer | Researcher & Lecturer @ Dilla University
           </p>
           <p className="about-myself">+251 924 703 531</p>
+          <div className="contact-emails">
+          <p className="about-myself"><Envelope size={20}/>   kulhabesh31@gmail.com ||</p>&nbsp;
+          <p className="about-myself">adisumulu.du.edu.et</p>
+          </div>
         </div>
         <div className="home-intro-photo">
           <img src={my_photo} alt="" className="my_photo" />

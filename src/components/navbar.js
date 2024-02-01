@@ -3,9 +3,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import Button from "react-bootstrap/Button";
+import CloseIcon from '@mui/icons-material/Close';
 
-
-function Navbar_navbar({show_hide_sidebar}) {
+function Navbar_navbar({show_hide_sidebar, sidebarDisplay}) {
 
   return (
     <Navbar
@@ -17,10 +17,10 @@ function Navbar_navbar({show_hide_sidebar}) {
     >
       <Nav>
         <Button variant="text" onClick={show_hide_sidebar}>
-          <MenuOutlinedIcon />
+        {sidebarDisplay==='none'? <MenuOutlinedIcon /> : <CloseIcon /> }
         </Button>
       </Nav>
-      <Navbar.Brand href="#home">  My Profile</Navbar.Brand>
+      <Navbar.Brand href="/">  My Profile</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto">
