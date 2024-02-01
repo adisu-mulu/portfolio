@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Envelope,
-  Twitter,
-  Linkedin,
-  Facebook,
-  Github,
-} from "react-bootstrap-icons";
+
 import my_photo from "../imgs/bg2.jpg";
 
 function MainBody() {
@@ -29,9 +23,10 @@ function MainBody() {
           Hello there, my name is Adisu Mulu. I am a software engineer,
           researcher and lecturer @ Dilla university, Ethiopia. I have been
           working as a full time computer science lecturer @DU since september
-          2019. I also work as a part-time lecturer at private colleges.</p> 
-          <p className="home-about-description">As an
-          academian, I am also an active researcher, and collaborate with
+          2019. I also work as a part-time lecturer at private colleges.
+        </p>
+        <p className="home-about-description">
+          As an academian, I am also an active researcher, and collaborate with
           colloeagues on various researchable questions in the field of computer
           science. I have worked on various small scale to medium scale software
           development projects ranging from web apps to mobile and desktop apps,
@@ -74,46 +69,12 @@ function MainBody() {
         </div>
       </div>
       <div className="blogs">
-        <p className="blogs-description">Join me on popular blogs and learn and share experience</p>
+        <p className="blogs-description">
+          Join me on popular blogs and learn and share experience
+        </p>
         <div className="blogs-list">
           <a href="">Medium</a>
           <a href="">Quora</a>
-        </div>
-      </div>
-      <div className="home-contact" id="contact">
-        <p className="home-contact-heading">Contact me</p>
-        <div className="contact-icons">
-          <a href="mailto:kulhabesh31@gmail.com">
-            <Envelope size={25} />
-          </a>
-          <a
-            href="https://twitter.com/adismulu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Twitter size={25} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/adisu-mulu-241071295/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Linkedin size={25} />
-          </a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100093135571717"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Facebook size={25} />
-          </a>
-          <a
-            href="https://www.github.com/adisu-mulu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github size={25} />
-          </a>
         </div>
       </div>
     </div>

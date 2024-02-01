@@ -11,7 +11,7 @@ function Sidebar({ sidebarDisplay }) {
           <a href="/projects">Projects</a>
         </li>
         <li>
-          <a href="/research">Research</a>
+          <a href="/researches">Research</a>
         </li>
         <li>
           <a href="up-events">Upcoming Events</a>
