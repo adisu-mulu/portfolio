@@ -5,7 +5,7 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import Button from "react-bootstrap/Button";
 import CloseIcon from '@mui/icons-material/Close';
 
-function Navbar_navbar({show_hide_sidebar, sidebarDisplay}) {
+function NavbarNavbar({show_hide_sidebar, sidebarDisplay}) {
 
   return (
     <Navbar
@@ -33,4 +33,4 @@ function Navbar_navbar({show_hide_sidebar, sidebarDisplay}) {
     </Navbar>
   );
 }
-export default Navbar_navbar;
+export default NavbarNavbar;

@@ -76,11 +76,12 @@ function MainBody() {
       </div>
       <div className="blogs">
         <p className="blogs-description">
-          Join me on popular blogs and learn and share experience
+          Join me and learn and share experiences
         </p>
         <div className="blogs-list">
-          <a href="">Medium</a>
-          <a href="">Quora</a>
+          <a href="https://medium.com/@adisu_mulu">Medium</a>
+          <a href="https://www.quora.com/profile/Adis-Mulu">Quora</a>
+          <a href="https://www.researchgate.net/profile/Adisu-Mulu">ResearchGate</a>
         </div>
       </div>
     </div>
