@@ -20,7 +20,7 @@ function NavbarNavbar({show_hide_sidebar, sidebarDisplay}) {
         {sidebarDisplay==='none'? <MenuOutlinedIcon /> : <CloseIcon /> }
         </Button>
       </Nav>
-      <Navbar.Brand href="/">  My Profile</Navbar.Brand>
+      <Navbar.Brand href="/">Portfolio</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto">
