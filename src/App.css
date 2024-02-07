@@ -8,10 +8,15 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  flex: 1;
+ 
 }
 .body-wrapper{
-  flex:1;
+  display: flex;
+  flex:1;   /* the body-wrapper div takes the whole space remaining from navbar and footer*/
+  /* background-color: red; */
+}
+.body-wrapper > *{
+  flex: 1;
 }
 #menu {
   padding: 50px;
@@ -213,7 +218,7 @@
   font-size: 40px;
   font-weight: 200;
   font-family: "Times New Roman", Times, serif;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 .contact-icons{
   display: flex;

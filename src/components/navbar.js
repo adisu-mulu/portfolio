@@ -25,9 +25,9 @@ function NavbarNavbar({show_hide_sidebar, sidebarDisplay}) {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto">
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="#about">About</Nav.Link>
-          <Nav.Link href="#service">Service</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav.Link href="/#about">About</Nav.Link>
+          <Nav.Link href="/#service">Service</Nav.Link>
+          <Nav.Link href="/#contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
