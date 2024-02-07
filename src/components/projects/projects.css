@@ -80,7 +80,7 @@
   .project-card {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 250px;
     height: 350px;
   }
 }
