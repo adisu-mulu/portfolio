@@ -3,7 +3,7 @@ import ProjectList from "./projectList";
 import "./projects.css";
 import colMgm from "./research_images/collegeMgm.jpg";
 import health from "./research_images/health.jpeg";
-import health2 from "./research_images/health2.jpg";
+// import health2 from "./research_images/health2.jpg";
 // import bg from './bg.jpg';
 export default function Projects() {
   const projects = [
