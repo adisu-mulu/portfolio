@@ -13,7 +13,7 @@
 .body-wrapper{
   display: flex;
   flex:1;   /* the body-wrapper div takes the whole space remaining from navbar and footer*/
-  /* background-color: red; */
+  
 }
 .body-wrapper > *{
   flex: 1;
