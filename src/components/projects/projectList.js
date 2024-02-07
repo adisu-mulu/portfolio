@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./projects.css";
-
+import Button from 'react-bootstrap/Button';
 const ProjectList = ({
   projectName,
   description,
@@ -17,10 +17,15 @@ const ProjectList = ({
       <div className="project-body">
         <h3 className="project-name">{projectName}</h3>
         <p className="project-description">{description}</p>
-        <div className="project-languages">
-          <strong>Languages:</strong> {languages.join(", ")}
+        <div className="lang-demo">
+          <div className="project-languages">
+            <strong>Languages:</strong>
+            {languages.map((language) => (
+              <span className="lang-btn-text">{language}</span>
+            ))}
+          </div>
+          <a href="" className="lang-btn-demo">Demo</a>
         </div>
-        
       </div>
     </div>
   );
