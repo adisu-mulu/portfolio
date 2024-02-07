@@ -9,8 +9,8 @@
   /* background-color: rgb(36, 44, 58); */
   background: linear-gradient(
     0deg,
-    rgba(52, 62, 109, 0.8) 15%,
-    rgb(7, 22, 44) 80%
+    rgba(52, 62, 109, 0.8) 5%,
+    rgb(7, 22, 44) 60%
   );
 }
 .project-card {
@@ -80,7 +80,7 @@
   .project-card {
     display: flex;
     justify-content: space-between;
-    width: 250px;
+    width: 150px;
     height: 350px;
   }
 }
