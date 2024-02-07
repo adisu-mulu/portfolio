@@ -7,7 +7,7 @@
   /* background-color: rgb(22, 27, 37); */
   padding: 100px 50px 100px 50px;
   /* background-color: rgb(36, 44, 58); */
-  background: linear-gradient(0deg, rgba(6, 2, 0, .8) 5%,
+  background: linear-gradient(0deg, rgba(6, 2, 0, .8) 1%,
   rgba(0, 2, 5,1) 100%);
  
 }
@@ -70,7 +70,7 @@
     /* flex-direction: row; */
     
     justify-content: space-between;
-    width: 350px;
+    width: 250px;
     height: 350px;
     
   }
@@ -82,9 +82,11 @@
     margin-top: 10px;
   }
 }
-/* @media screen and (max-width: 1600px) {
+@media screen and (max-width: 720px) {
   .project-card {
-    width: 400px;
-    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 350px;
   }
-} */
+}
