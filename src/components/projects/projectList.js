@@ -2,7 +2,6 @@
 
 import React from "react";
 import "./projects.css";
-import Button from 'react-bootstrap/Button';
 const ProjectList = ({
   projectName,
   description,
@@ -24,7 +23,7 @@ const ProjectList = ({
               <span className="lang-btn-text">{language}</span>
             ))}
           </div>
-          <a href="" className="lang-btn-demo">Demo</a>
+          <a href="#demo" className="lang-btn-demo">Demo</a>
         </div>
       </div>
     </div>
