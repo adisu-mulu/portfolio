@@ -22,7 +22,7 @@
   /* flex-direction: column; */
   justify-content:space-evenly;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.005);
   }
   padding: 25px;
   margin-left: 100px;
@@ -60,15 +60,16 @@
 }
 
 .project-languages {
+  flex-wrap: wrap;
   font-size: 0.9rem;
   color: black;
   border-radius: 10px;
 }
 .lang-btn-text {
-  padding: 3px;
+  padding: 0px;
   margin-left: 5px;
   background-color: blue;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .lang-demo {
@@ -78,6 +79,10 @@
 .lang-btn-demo{
   text-decoration: none;
   list-style: none;
+}
+.status-demo{
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 481px) {
   .projects-section {

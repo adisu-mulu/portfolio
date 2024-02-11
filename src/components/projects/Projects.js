@@ -12,23 +12,27 @@ export default function Projects() {
       description: "A brief description of Project 1.",
       languages: ["JavaScript", "React"],
       backgroundImage: colMgm,
+      status: "Completed",
     },
     {
       projectName: "Project 1",
       description: "A brief description of Project 1.",
       languages: ["JavaScript", "React"],
       backgroundImage: health,
+      status: "In progress"
     },
     {
       projectName: "Project 1",
       description: "A brief description of Project 1.",
       languages: ["JavaScript", "React"],
       backgroundImage: health,
+      status: "Completed",
     },
     {
       projectName: "Project 1",
       description: "A brief description of Project 1.",
       languages: ["JavaScript", "React"],
+      status: "Completed",
       backgroundImage: health,
     },
     // Add more projects as needed

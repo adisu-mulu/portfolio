@@ -7,6 +7,7 @@ const ProjectList = ({
   description,
   languages,
   backgroundImage,
+  status,
 }) => {
   return (
     <div className="project-card">
@@ -23,7 +24,11 @@ const ProjectList = ({
               <span className="lang-btn-text">{language}</span>
             ))}
           </div>
-          <a href="#demo" className="lang-btn-demo">Demo</a>
+          
+        </div>
+        <div className="status-demo">
+        <p className="project-status">Status: <i>{status}</i></p>
+        <a href="#demo" className="lang-btn-demo">Demo</a>
         </div>
       </div>
     </div>
