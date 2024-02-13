@@ -15,20 +15,27 @@ const ProjectList = ({
         <img src={backgroundImage} alt="" className="project-image" />
       </div>
       <div className="project-body">
-        <h3 className="project-name">{projectName}</h3>
-        <p className="project-description">{description}</p>
-        <div className="lang-demo">
-          <div className="project-languages">
-            <strong>Languages:</strong>
-            {languages.map((language) => (
-              <span className="lang-btn-text">{language}</span>
-            ))}
-          </div>
-          
+        <div>
+          <h3 className="project-name">{projectName}</h3>
+          <p className="project-description">{description}</p>
         </div>
-        <div className="status-demo">
-        <p className="project-status">Status: <i>{status}</i></p>
-        <a href="#demo" className="lang-btn-demo">Demo</a>
+        <div>
+          <div className="lang-demo">
+            <div className="project-languages">
+              <strong>Languages:</strong>
+              {languages.map((language) => (
+                <span className="lang-btn-text">{language}</span>
+              ))}
+            </div>
+          </div>
+          <div className="status-demo">
+            <p className="project-status">
+              Status: <i>{status}</i>
+            </p>
+            <a href="#demo" className="lang-btn-demo">
+              Demo
+            </a>
+          </div>
         </div>
       </div>
     </div>

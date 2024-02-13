@@ -1,10 +1,11 @@
 import React from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import ProjectList from "./projectList";
 import "./projects.css";
 import colMgm from "./research_images/collegeMgm.jpg";
 import health from "./research_images/health.jpeg";
-// import health2 from "./research_images/health2.jpg";
-// import bg from './bg.jpg';
+
 export default function Projects() {
   const projects = [
     {
@@ -19,7 +20,7 @@ export default function Projects() {
       description: "A brief description of Project 1.",
       languages: ["JavaScript", "React"],
       backgroundImage: health,
-      status: "In progress"
+      status: "In progress",
     },
     {
       projectName: "Project 1",
@@ -39,9 +40,19 @@ export default function Projects() {
   ];
   return (
     <div className="projects-section">
+      <div className="proj-search">
+        <div className="search-bar">
+          <Form.Control
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div>
+        {/* <Button variant="outline-success">Search</Button> */}
+      </div>
       {projects.map((project, index) => (
-          <ProjectList key={index} {...project} />
-        ))}
+        <ProjectList key={index} {...project} />
+      ))}
     </div>
   );
 }
