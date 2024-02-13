@@ -1,6 +1,5 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
 import ProjectList from "./projectList";
 import "./projects.css";
 import colMgm from "./research_images/collegeMgm.jpg";
@@ -48,7 +47,7 @@ export default function Projects() {
             aria-label="Search"
           />
         </div>
-        {/* <Button variant="outline-success">Search</Button> */}
+        
       </div>
       {projects.map((project, index) => (
         <ProjectList key={index} {...project} />
