@@ -21,11 +21,10 @@ function App() {
         <Sidebar sidebarDisplay={sidebarDisplay} />
         <div className="body-wrapper">
         <Routes>
-          <Route path="/" element={MainBody } />
-          <Route path="/projects" element={Projects } />
-          <Route path="/researches" element={Researches } />
-          {/* Redirect unknown routes to home */}
-          {/* <Route path="*" element={<Navigate to="/" />} /> */}
+          <Route path="/portfolio" element={<MainBody />} />
+          <Route path="/portfolio/projects" element={<Projects />} />
+          <Route path="/portfolio/researches" element={<Researches />} />
+        
         </Routes>
         </div>
         <Footer />
