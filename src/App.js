@@ -4,7 +4,7 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 import MainBody from "./components/MainBody";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Projects from "./components/projects/Projects";
 import Researches from "./components/researches/Researches";
 
