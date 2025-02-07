@@ -21,7 +21,7 @@ function App() {
         <Sidebar sidebarDisplay={sidebarDisplay} />
         <div className="body-wrapper">
         <Routes>
-          <Route path="/portfolio" element={<MainBody />} />
+          <Route path="/" element={<MainBody />} />
           <Route path="/portfolio/projects" element={<Projects />} />
           <Route path="/portfolio/researches" element={<Researches />} />
         
