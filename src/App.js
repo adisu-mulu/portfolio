@@ -16,14 +16,14 @@ function App() {
   return (
     <div className="App">
       <div className="app-wrapper">
-      <Router basename="/portfolio">
+      <Router>
         <NavbarNavbar show_hide_sidebar={show_hide_sidebar} sidebarDisplay={sidebarDisplay}/>
         <Sidebar sidebarDisplay={sidebarDisplay} />
         <div className="body-wrapper">
         <Routes>
           <Route path="/" element={<MainBody />} />
-          <Route path="/portfolio/projects" element={<Projects />} />
-          <Route path="/portfolio/researches" element={<Researches />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/researches" element={<Researches />} />
         
         </Routes>
         </div>
