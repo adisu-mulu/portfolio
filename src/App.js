@@ -21,9 +21,11 @@ function App() {
         <Sidebar sidebarDisplay={sidebarDisplay} />
         <div className="body-wrapper">
         <Routes>
-          <Route path="/" exact Component={MainBody } />
-          <Route path="/projects" exact Component={Projects } />
-          <Route path="/researches" exact Component={Researches } />
+          <Route path="/" element={MainBody } />
+          <Route path="/projects" element={Projects } />
+          <Route path="/researches" element={Researches } />
+          {/* Redirect unknown routes to home */}
+          {/* <Route path="*" element={<Navigate to="/" />} /> */}
         </Routes>
         </div>
         <Footer />
