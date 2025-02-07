@@ -4,7 +4,7 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 import MainBody from "./components/MainBody";
 import Footer from "./components/Footer";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter  as Router, Route, Routes } from "react-router-dom";
 import Projects from "./components/projects/Projects";
 import Researches from "./components/researches/Researches";
 
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <div className="app-wrapper">
-      <Router>
+      <Router basename="/portfolio">
         <NavbarNavbar show_hide_sidebar={show_hide_sidebar} sidebarDisplay={sidebarDisplay}/>
         <Sidebar sidebarDisplay={sidebarDisplay} />
         <div className="body-wrapper">
