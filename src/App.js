@@ -21,9 +21,9 @@ function App() {
         <Sidebar sidebarDisplay={sidebarDisplay} />
         <div className="body-wrapper">
         <Routes>
-          <Route path="/" exact Component={<MainBody />} />
-          <Route path="/projects" exact Component={<Projects />} />
-          <Route path="/researches" exact Component={<Researches />} />
+          <Route path="/" exact Component={MainBody } />
+          <Route path="/projects" exact Component={Projects } />
+          <Route path="/researches" exact Component={Researches } />
         </Routes>
         </div>
         <Footer />
