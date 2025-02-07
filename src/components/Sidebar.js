@@ -8,10 +8,10 @@ function Sidebar({ sidebarDisplay }) {
     <div className="Sidebar" style={sidebarStyle}>
       <ul className="sidebar-items">
         <li>
-          <a href="/projects">Projects</a>
+          <a href="portfolio/projects">Projects</a>
         </li>
         <li>
-          <a href="/researches">Research</a>
+          <a href="portfolio/researches">Research</a>
         </li>
         <li>
           <a href="up-events">Upcoming Events</a>
