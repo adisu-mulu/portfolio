@@ -22,7 +22,7 @@ function App() {
         <div className="body-wrapper">
         <Routes>
           <Route path="/" element={<MainBody />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" exact Component={<Projects />} />
           <Route path="/researches" element={<Researches />} />
         
         </Routes>
