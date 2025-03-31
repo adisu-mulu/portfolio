@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <div className="app-wrapper">
-      <Router>
+      <Router basename="/portfolio">
         <NavbarNavbar show_hide_sidebar={show_hide_sidebar} sidebarDisplay={sidebarDisplay}/>
         <Sidebar sidebarDisplay={sidebarDisplay} />
         <div className="body-wrapper">
