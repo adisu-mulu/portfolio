@@ -27,8 +27,8 @@ function NavbarNavbar({show_hide_sidebar, sidebarDisplay}) {
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/#about">About Me</Nav.Link>
           <Nav.Link href="/#service">Services</Nav.Link>
-          <Nav.Link href="/#about">Projects</Nav.Link>
-          <Nav.Link href="/#service">Publications</Nav.Link>
+          <Nav.Link href="/#projects">Projects</Nav.Link>
+          <Nav.Link href="/#researches">Publications</Nav.Link>
           <Nav.Link href="/#contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
