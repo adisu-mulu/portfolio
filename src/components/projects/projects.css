@@ -82,6 +82,8 @@
     flex-wrap: nowrap;
   }
   div#projectsList{
+    display: flex;
+    flex-wrap: wrap;
     gap: 100px;
     padding-left: 20px;
   }
