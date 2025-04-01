@@ -282,12 +282,12 @@
   }
   .home-about-heading {
     padding-top: 50px;
-    font-size: 35px;
+    font-size: 25px;
   }
   .home-about-description {
     padding-left: 30px;
     padding-right: 30px;
-    font-size: medium;
+    font-size: small;
   }
   .home-services-heading {
     padding-top: 50px;
