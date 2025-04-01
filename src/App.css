@@ -198,14 +198,13 @@ margin-bottom: 10px;
 }
 .home-projects-heading {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   font-size: 40px;
   font-weight: 300;
   font-family: "Times New Roman", Times, serif;
   padding-top: 0px;
   padding-bottom: 0px;
   color: black;
-  margin-left: 5%;
 }
 .home-publications{
   background-color: white;
@@ -308,6 +307,10 @@ margin-bottom: 10px;
   }
   .blogs-list {
     font-size: 20px;
+  }
+
+  .home-projects-heading{
+    font-size: 25px;
   }
   .home-contact-heading {
     padding-top: 30px;
