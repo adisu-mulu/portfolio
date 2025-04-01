@@ -240,7 +240,7 @@
   cursor: pointer;
   padding-bottom: 25px;
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 720px) {
   .home-intro {
     display: flex;
     flex-direction: column-reverse;
@@ -255,6 +255,7 @@
   }
   .job-title {
     font-size: 12px;
+    padding: 0px 10px 0px 10px;
   }
   .about-myself {
     font-size: 12px;
