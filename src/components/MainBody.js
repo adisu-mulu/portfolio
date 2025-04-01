@@ -79,7 +79,7 @@ function MainBody() {
             </p>
           </div>
         </div>
-      </div>
+      </div><br/><br/>
       <div className="blogs">
         <p className="blogs-description">
           Join me and learn and share experiences
@@ -91,8 +91,8 @@ function MainBody() {
             ResearchGate
           </a>
         </div>
-      </div>
-
+      </div><br/>
+      <hr style={{ width: "80%", margin: "0 auto" }} /><br/><br/>
       <div className="home-projects" id="projects">
         <p className="home-projects-heading">Projects</p>
         <Projects />

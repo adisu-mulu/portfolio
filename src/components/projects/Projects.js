@@ -33,7 +33,7 @@ export default function Projects() {
   return (
   <div className="projects-section">
 
-<div className="d-flex flex-wrap justify-content-start" id="projectsList">
+<div className="d-flex flex-wrap justify-content-center" id="projectsList">
   {projects.map((project, index) => (
     <div className="p-2" key={index}>
       <ProjectList {...project} />

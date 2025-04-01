@@ -193,20 +193,23 @@
 }
 
 .home-projects {
-  background: linear-gradient(
-    0deg,
-    rgba(52, 62, 109, 0.8) 5%,
-    rgb(7, 22, 44) 60%
-  );
+padding-bottom: 20px;
+margin-bottom: 10px;  
 }
 .home-projects-heading {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   font-size: 40px;
   font-weight: 300;
   font-family: "Times New Roman", Times, serif;
-  padding-top: 50px;
-  color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: black;
+  margin-left: 5%;
+}
+.home-publications{
+  background-color: white;
+  margin-top: 0px;
 }
 .home-publications-heading{
   display: flex;

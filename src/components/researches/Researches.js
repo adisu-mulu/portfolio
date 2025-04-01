@@ -28,7 +28,7 @@ function ResearchAndPublications() {
  
     <div className="d-flex flex-wrap justify-content-start">
       {researches.map((research, index) => (
-        <Card className="m-2" key={index} style={{ width: '100%' ,padding: '10px'}}>
+        <Card className="m-2" key={index} style={{ width: '100%' ,padding: '1px'}}>
           <Card.Body>
             <Card.Title>{research.researchName}</Card.Title>
             <Card.Text>
