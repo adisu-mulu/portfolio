@@ -95,9 +95,7 @@
   }
 }
 @media screen and (max-width: 720px) {
-  .projects-section {
-   padding: 80px 25px 50px 25px;
-  }
+  
   .project-card {
     display: flex;
     flex-direction: column;
