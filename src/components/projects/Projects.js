@@ -1,5 +1,4 @@
 import React from "react";
-import Form from "react-bootstrap/Form";
 import ProjectList from "./projectList";
 import "./projects.css";
 import colMgm from "./research_images/collegeMgm.jpg";

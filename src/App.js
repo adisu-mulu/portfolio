@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import NavbarNavbar from "./components/navbar";
 import "./App.css";
-import Sidebar from "./components/Sidebar";
 import MainBody from "./components/MainBody";
 import Footer from "./components/Footer";
 import { BrowserRouter  as Router, Route, Routes } from "react-router-dom";
