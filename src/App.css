@@ -276,12 +276,13 @@ margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     gap: 0px;
+    font-size: small;
   }
   .service-item h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .service-item p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .home-about-heading {
     padding-top: 50px;
@@ -294,11 +295,12 @@ margin-bottom: 10px;
   }
   .home-services-heading {
     padding-top: 50px;
-    font-size: 35px;
+    font-size: 25px;
   }
   .home-services-description {
     padding-left: 35px;
     padding-right: 35px;
+    font-size: small;
   }
   .blogs-description {
     font-size: 20px;
