@@ -1,7 +1,9 @@
 import React from "react";
 
 import my_photo from "../imgs/bg2.jpg";
-import {Envelope} from "react-bootstrap-icons";
+import { Envelope } from "react-bootstrap-icons";
+import Projects from "./projects/Projects";
+import ResearchAndPublications from "./researches/Researches";
 // import { BiPhoneCall } from 'bootstrap-icons';
 
 function MainBody() {
@@ -11,12 +13,16 @@ function MainBody() {
         <div className="home-intro-text">
           <h2>Adisu Mulu</h2>
           <p className="job-title">
-            Software engineer | Researcher & Lecturer @ Dilla University
+            Full-Stack Developer | Web API Developer | Researcher & Lecturer @
+            Dilla University
           </p>
           <p className="about-myself">+251 924 703 531</p>
           <div className="contact-emails">
-          <p className="about-myself"><Envelope size={20}/>   kulhabesh31@gmail.com ||</p>&nbsp;
-          <p className="about-myself">adisumulu.du.edu.et</p>
+            <p className="about-myself">
+              <Envelope size={20} /> kulhabesh31@gmail.com ||
+            </p>
+            &nbsp;
+            <p className="about-myself">adisumulu.du.edu.et</p>
           </div>
         </div>
         <div className="home-intro-photo">
@@ -81,8 +87,20 @@ function MainBody() {
         <div className="blogs-list">
           <a href="https://medium.com/@adisu_mulu">Medium</a>
           <a href="https://www.quora.com/profile/Adis-Mulu">Quora</a>
-          <a href="https://www.researchgate.net/profile/Adisu-Mulu">ResearchGate</a>
+          <a href="https://www.researchgate.net/profile/Adisu-Mulu">
+            ResearchGate
+          </a>
         </div>
+      </div>
+
+      <div className="home-projects" id="projects">
+        <p className="home-projects-heading">Projects</p>
+        <Projects />
+      </div>
+
+      <div className="home-publications" id="research_publications">
+        <p className="home-publications-heading">Research and Publications</p>
+        <ResearchAndPublications />
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ function App() {
       <div className="app-wrapper">
       <Router>
         <NavbarNavbar show_hide_sidebar={show_hide_sidebar} sidebarDisplay={sidebarDisplay}/>
-        <Sidebar sidebarDisplay={sidebarDisplay} />
+        {/* <Sidebar sidebarDisplay={sidebarDisplay} /> */}
         <div className="body-wrapper">
         <Routes>
           <Route path="/" element={<MainBody />} />

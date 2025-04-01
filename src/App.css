@@ -1,21 +1,17 @@
 .App {
-  width: 100%; 
+  width: 100%;
   height: 100%;
- 
-  
 }
-.app-wrapper{
+.app-wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
- 
 }
-.body-wrapper{
+.body-wrapper {
   display: flex;
-  flex:1;   /* the body-wrapper div takes the whole space remaining from navbar and footer*/
-  
+  flex: 1; /* the body-wrapper div takes the whole space remaining from navbar and footer*/
 }
-.body-wrapper > *{
+.body-wrapper > * {
   flex: 1;
 }
 #menu {
@@ -91,15 +87,11 @@
 .job-title {
   font-size: 30px;
 }
-.contact-emails{
+.contact-emails {
   display: flex;
   justify-content: center;
   color: darkgray;
 }
-/* .about-myself {
-  color: darkgray;
-  
-} */
 
 .my_photo {
   width: 350px;
@@ -135,9 +127,6 @@
   flex-direction: column;
   background-color: #141e2c;
   color: white;
-  /* background: linear-gradient(0deg,rgb(0, 2, 5)60%,
-    rgba(0, 3, 8, 0.2)100%);
-    box-shadow: 0 0 4px 0 rgb(0,0,0,.5);*/
   padding-bottom: 100px;
 }
 
@@ -155,7 +144,7 @@
   justify-content: center;
 }
 
-.home-service-lists{
+.home-service-lists {
   display: flex;
   padding-left: 40px;
   padding-right: 40px;
@@ -178,23 +167,23 @@
   color: white;
 }
 
-.blogs{
+.blogs {
   display: flex;
   flex-direction: column;
 }
-.blogs-description{
+.blogs-description {
   display: flex;
   justify-content: center;
   padding-top: 25px;
   font-size: 30px;
 }
 
-.blogs-list{
+.blogs-list {
   display: flex;
   justify-content: center;
   gap: 20px;
   font-style: italic;
-  font-size: 25px;;
+  font-size: 25px;
   font-weight: 500;
   padding-bottom: 50px;
 }
@@ -203,13 +192,37 @@
   text-decoration: none;
 }
 
+.home-projects {
+  background: linear-gradient(
+    0deg,
+    rgba(52, 62, 109, 0.8) 5%,
+    rgb(7, 22, 44) 60%
+  );
+}
+.home-projects-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 50px;
+  color: white;
+}
+.home-publications-heading{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 50px;
+  color: black;
+}
 .home-contact {
   display: flex;
   flex-direction: column;
   color: white;
   background: linear-gradient(0deg, rgb(0, 2, 5) 100%, rgba(0, 3, 8, 0.2) 100%);
   box-shadow: 0 0 4px 0 rgb(0, 0, 0, 0.5);
-  
 }
 
 .home-contact-heading {
@@ -220,7 +233,7 @@
   font-family: "Times New Roman", Times, serif;
   padding-top: 25px;
 }
-.contact-icons{
+.contact-icons {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -243,24 +256,24 @@
   .job-title {
     font-size: 12px;
   }
-  .about-myself{
+  .about-myself {
     font-size: 12px;
   }
-  .home-about{
+  .home-about {
     padding-bottom: 50px;
   }
-  .home-services{
+  .home-services {
     padding-bottom: 25px;
   }
-  .home-service-lists{
+  .home-service-lists {
     display: flex;
     flex-direction: column;
-    gap: 0px
+    gap: 0px;
   }
-  .service-item h2{
+  .service-item h2 {
     font-size: 16px;
   }
-  .service-item p{
+  .service-item p {
     font-size: 14px;
   }
   .home-about-heading {
@@ -279,20 +292,19 @@
   .home-services-description {
     padding-left: 35px;
     padding-right: 35px;
-
   }
-  .blogs-description{
+  .blogs-description {
     font-size: 20px;
     text-align: center;
   }
-  .blogs-list{
+  .blogs-list {
     font-size: 20px;
   }
   .home-contact-heading {
     padding-top: 30px;
     font-size: 35px;
   }
-  .contact-icons{
+  .contact-icons {
     padding-bottom: 25px;
   }
 }
