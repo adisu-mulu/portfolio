@@ -30,21 +30,30 @@ function MainBody() {
         </div>
       </div>
       <div className="home-about" id="about">
-        <p className="home-about-heading">About me</p>
+        <p className="home-about-heading">About Me</p>
         <p className="home-about-description">
-          Hello there, my name is Adisu Mulu. I am a software engineer,
-          researcher and lecturer @ Dilla university, Ethiopia. I have been
-          working as a full time computer science lecturer @DU since september
-          2019. I also work as a part-time lecturer at private colleges.
+          With a deep passion for technology and education, I am a Computer
+          Science Lecturer, Full-Stack Developer, Web API developer and
+          Researcher dedicated to bridging the gap between theory and real-world
+          application. I hold a BSc in Computer Science from Hawassa University
+          and an MSc in Computer Science and Engineering from ASTU, equipping me
+          with a strong foundation in computing and advanced problem-solving
+          skills. My expertise spans modern web technologies, including React,
+          Next.js, NestJS, Node.js, Express, Django, Flask, and Python, allowing
+          me to design and develop scalable, high-performance web applications
+          and APIs.
         </p>
         <p className="home-about-description">
-          As an academian, I am also an active researcher, and collaborate with
-          colloeagues on various researchable questions in the field of computer
-          science. I have worked on various small scale to medium scale software
-          development projects ranging from web apps to mobile and desktop apps,
-          as individual project and as team work. I did my Bsc in computer
-          science @hawassa university and Msc in computer science and
-          engineering @ASTU.
+          Beyond software development, my research focuses on Artificial
+          Intelligence, Machine Learning, and Deep Learning, exploring
+          cutting-edge techniques to drive innovation in intelligent systems. I
+          am particularly interested in leveraging AI for automation, predictive
+          analytics, and real-world problem-solving. As a lecturer, I am
+          committed to mentoring and shaping the next generation of developers
+          and researchers, ensuring they gain both theoretical knowledge and
+          practical skills. I thrive on solving complex challenges, building
+          impactful solutions, and pushing the boundaries of technology through
+          continuous learning and research.
         </p>
       </div>
       <div className="home-services" id="service">
@@ -84,6 +93,8 @@ function MainBody() {
       <br />
       <div className="blogs">
         <p className="blogs-description">
+          <br />
+          <br />
           Join me and learn and share experiences
         </p>
         <div className="blogs-list">
@@ -95,19 +106,26 @@ function MainBody() {
         </div>
       </div>
       <br />
+      <br />
       {/* <hr style={{ width: "80%", margin: "0 auto" }} /> */}
       <br />
       <br />
       <div className="home-projects" id="projects">
-        <p className="home-projects-heading">Projects</p><br/>
+        <p className="home-projects-heading">Projects</p>
+        <br />
         <Projects />
       </div>
 
       <div className="home-publications" id="research_publications">
+        <br />
+        <br />
         <p className="home-publications-heading">Research and Publications</p>
-        <ResearchAndPublications /><br/><br/>
+        <ResearchAndPublications />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
-      
     </div>
   );
 }
