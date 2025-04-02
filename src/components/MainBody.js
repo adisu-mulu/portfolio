@@ -55,11 +55,11 @@ function MainBody() {
         </p>
         <div className="home-service-lists">
           <div class="service-item">
-            <h2>Web, Mobile and Desktop App Development</h2>
+            <h2>Full-Stack development | Web API development</h2>
             <p>
-              I specialize in creating applications using various languages and
-              frameworks, including Python, Java, React, Flask, Django, Kivy,
-              and more.
+              I specialize in creating Front-end and Back-end applications and
+              Web API using frameworks like react, next.js, nestJS, express,
+              flask and django
             </p>
           </div>
           <div class="service-item">
@@ -79,7 +79,9 @@ function MainBody() {
             </p>
           </div>
         </div>
-      </div><br/><br/>
+      </div>
+      <br />
+      <br />
       <div className="blogs">
         <p className="blogs-description">
           Join me and learn and share experiences
@@ -91,8 +93,11 @@ function MainBody() {
             ResearchGate
           </a>
         </div>
-      </div><br/>
-      <hr style={{ width: "80%", margin: "0 auto" }} /><br/><br/>
+      </div>
+      <br />
+      <hr style={{ width: "80%", margin: "0 auto" }} />
+      <br />
+      <br />
       <div className="home-projects" id="projects">
         <p className="home-projects-heading">Projects</p>
         <Projects />
@@ -100,8 +105,9 @@ function MainBody() {
 
       <div className="home-publications" id="research_publications">
         <p className="home-publications-heading">Research and Publications</p>
-        <ResearchAndPublications />
+        <ResearchAndPublications /><br/><br/>
       </div>
+      
     </div>
   );
 }
