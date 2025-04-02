@@ -1,7 +1,10 @@
 
+div#projectsList{
+  gap: 30px;
+}
 .project-card {
-  width: 380px;
-  border-radius: 10px;
+  width: 500px;
+  border-radius: 0px;
   box-shadow: 0 2px 8px rgba(49, 14, 14, 0.1);
   transition: transform 0.3s ease-in-out;
   height: 300px;
@@ -9,7 +12,7 @@
   /* flex-direction: column; */
   justify-content:space-evenly;
   &:hover {
-    transform: scale(1.009);
+    transform: scale(1.09);
   };
   
   background-color: white;
@@ -34,7 +37,7 @@
   margin: 10px;
   padding: 10px;
   /* background-color: rgb(19, 18, 18); */
-  box-shadow: 0 4px 8px rgba(11, 10, 15, 0.1);
+  /* box-shadow: 0 4px 8px rgba(11, 10, 15, 0.1); */
 }
 .project-name {
   font-size: 1rem;

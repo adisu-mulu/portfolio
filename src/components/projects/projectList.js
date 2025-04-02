@@ -33,7 +33,7 @@ const ProjectList = ({
               Status: <i>{status}</i>
             </p>
             <a href="#demo" className="lang-btn-demo">
-              Demo
+              <i>Github</i>
             </a>
           </div>
         </div>

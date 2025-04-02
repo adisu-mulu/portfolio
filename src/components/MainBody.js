@@ -95,11 +95,11 @@ function MainBody() {
         </div>
       </div>
       <br />
-      <hr style={{ width: "80%", margin: "0 auto" }} />
+      {/* <hr style={{ width: "80%", margin: "0 auto" }} /> */}
       <br />
       <br />
       <div className="home-projects" id="projects">
-        <p className="home-projects-heading">Projects</p>
+        <p className="home-projects-heading">Projects</p><br/>
         <Projects />
       </div>
 
