@@ -165,8 +165,10 @@
 }
 
 .home-projects {
-padding-bottom: 20px;
+  padding-top:50px;
+padding-bottom: 100px;
 margin-bottom: 10px;  
+background-color: #141e2c;
 }
 .home-projects-heading {
   display: flex;
@@ -176,7 +178,8 @@ margin-bottom: 10px;
   font-family: "Times New Roman", Times, serif;
   padding-top: 0px;
   padding-bottom: 0px;
-  color: black;
+  color: white;
+  
 }
 .home-publications{
   background-color: white;
