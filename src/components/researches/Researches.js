@@ -30,8 +30,8 @@ function ResearchAndPublications() {
       {researches.map((research, index) => (
         <Card className="m-2" key={index} style={{ width: '100%' ,padding: '1px'}}>
           <Card.Body>
-            <Card.Title>{research.researchName}</Card.Title>
-            <Card.Text>
+            <Card.Title style={{fontSize: '17px'}}>{research.researchName}</Card.Title>
+            <Card.Text style={{fontSize: '15px'}}>
               {research.description}
             </Card.Text>
             <Card.Text>
