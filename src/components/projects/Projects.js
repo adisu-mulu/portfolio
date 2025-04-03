@@ -8,17 +8,14 @@ export default function Projects() {
   const projects = [
     {
       projectName: "Campus-navigation",
-      description: "A web based app that allows fresh students to find different directories, \
-                    locations and buildings easily while also getting latest news, announcements and other \
-                    information easily. It will also allow students to navigate the campus easily by using the integrated map.",
+      description: "A web based app that allows fresh students to find different directories, locations and buildings easily while also getting latest news, announcements and other information easily. It will also allow students to navigate the campus easily by using the integrated map.",
       languages: ["React.js", "Python(flask)", "MongoDB"],
       backgroundImage: colMgm,
       status: "Completed",
     },
     {
       projectName: "Research papers recommender system",
-      description: "A web based system which allows students and researchers to \
-                    find relevant papers based on title and abstract.",
+      description: "A web based system which allows students and researchers to find relevant papers based on title and abstract.",
       languages: ["React, Flask"],
       backgroundImage: health,
       status: "Completed",
