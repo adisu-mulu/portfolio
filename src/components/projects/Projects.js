@@ -12,6 +12,7 @@ export default function Projects() {
       languages: ["React.js", "Python(flask)", "MongoDB"],
       backgroundImage: colMgm,
       status: "Completed",
+      github: "https://github.com/adisu-mulu/campus-navigation",
     },
     {
       projectName: "Research papers recommender system",
@@ -19,6 +20,7 @@ export default function Projects() {
       languages: ["React, Flask"],
       backgroundImage: health,
       status: "Completed",
+      github: "https://github.com/adisu-mulu/research_recommender",
     },
     {
       projectName: "Unified Help Desk Solution (UHDS) for DU",
@@ -26,6 +28,7 @@ export default function Projects() {
       languages: ["React(next.js)", "nodejs(nestJS)"],
       backgroundImage: health,
       status: "In progress",
+      github: "",
     },
 
     // Add more projects as needed

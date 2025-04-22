@@ -8,6 +8,7 @@ const ProjectList = ({
   languages,
   backgroundImage,
   status,
+  github,
 }) => {
   return (
     <div className="project-card">
@@ -32,7 +33,7 @@ const ProjectList = ({
             <p className="project-status">
               Status: <i>{status}</i>
             </p>
-            <a href="#demo" className="lang-btn-demo">
+            <a href={github} className="lang-btn-demo">
               <i>Github</i>
             </a>
           </div>
