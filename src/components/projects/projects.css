@@ -4,7 +4,7 @@ div#projectsList{
 }
 .project-card {
   width: 500px;
-  border-radius: 0px;
+  border-radius: 5px;
   box-shadow: 0 2px 8px rgba(49, 14, 14, 0.1);
   transition: transform 0.3s ease-in-out;
   height: 300px;
