@@ -1,8 +1,9 @@
 import React from "react";
 import ProjectList from "./projectList";
 import "./projects.css";
-import colMgm from "./research_images/collegeMgm.jpg";
-import health from "./research_images/health.jpeg";
+import campnav from "./research_images/camp-nav.jpg";
+import research from "./research_images/research.jpeg";
+import uhds from "./research_images/uhds.jpg";
 
 export default function Projects() {
   const projects = [
@@ -10,7 +11,7 @@ export default function Projects() {
       projectName: "Campus-navigation",
       description: "A web based app that allows fresh students to find different directories, locations and buildings easily while also getting latest news, announcements and other information easily. It will also allow students to navigate the campus easily by using the integrated map.",
       languages: ["React.js", "Python(flask)", "MongoDB"],
-      backgroundImage: colMgm,
+      backgroundImage: campnav,
       status: "Completed",
       github: "https://github.com/adisu-mulu/campus-navigation",
     },
@@ -18,7 +19,7 @@ export default function Projects() {
       projectName: "Research papers recommender system",
       description: "A web based system which allows students and researchers to find relevant papers based on title and abstract.",
       languages: ["React, Flask"],
-      backgroundImage: health,
+      backgroundImage: research,
       status: "Completed",
       github: "https://github.com/adisu-mulu/research_recommender",
     },
@@ -26,7 +27,7 @@ export default function Projects() {
       projectName: "Unified Help Desk Solution (UHDS) for DU",
       description: "An efficient way of monitoring and tracking requests and services between different offices",
       languages: ["React(next.js)", "nodejs(nestJS)"],
-      backgroundImage: health,
+      backgroundImage: uhds,
       status: "In progress",
       github: "",
     },
