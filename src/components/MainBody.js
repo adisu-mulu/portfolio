@@ -13,8 +13,8 @@ function MainBody() {
         <div className="home-intro-text">
           <h2>Adisu Mulu</h2>
           <p className="job-title">
-            Full-Stack Developer | Web API Developer | Researcher & Lecturer @
-            Dilla University
+            Full-Stack Developer | Web API Developer | AI Researcher & CoSc
+            Lecturer @ Dilla University
           </p>
           <p className="about-myself">+251 924 703 531</p>
           <div className="contact-emails">
@@ -64,11 +64,20 @@ function MainBody() {
         </p>
         <div className="home-service-lists">
           <div class="service-item">
-            <h2>Full-Stack development | Web API development</h2>
+            <h2>
+              Full-stack & Web API development | Data Analysis & ML Model
+              development
+            </h2>
             <p>
               I specialize in creating Front-end and Back-end applications and
               Web API using frameworks like react, next.js, nestJS, express,
               flask and django
+            </p>
+            <p>
+              As a Data Analyst and AI model developer, I utilize
+              machine learning and deep learning algorithms to extract
+              insights from data, build predictive models, and implement
+              solutions that drive data-based decision-making.
             </p>
           </div>
           <div class="service-item">
