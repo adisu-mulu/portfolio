@@ -1,6 +1,6 @@
 import React from "react";
 import my_photo from "../imgs/bg2.jpg";
-import { CodeSlash, Cpu, Mortarboard, ShareFill } from "react-bootstrap-icons";
+import { CodeSlash, Cpu, Mortarboard, ShareFill, Briefcase, Award, Envelope, Telephone } from "react-bootstrap-icons";
 import Projects from "./projects/Projects";
 import ResearchAndPublications from "./researches/Researches";
 
@@ -16,9 +16,15 @@ function MainBody() {
           <p className="job-title">
             Full-Stack Developer | AI Researcher | Computer Science Lecturer
           </p>
-          <div className="hero-actions">
-            <a href="#projects" className="btn-premium">Explore My Work</a>
+          <div className="hero-contact-info">
+            <a href="mailto:kulhabesh31@gmail.com" className="contact-pill glow-glow">
+              <Envelope /> <span>kulhabesh31@gmail.com</span>
+            </a>
+            <a href="tel:+251911111111" className="contact-pill glow-glow">
+              <Telephone /> <span>+251-924-703-531</span>
+            </a>
           </div>
+
         </div>
         <div className="home-intro-photo">
           <img src={my_photo} alt="Adisu Mulu" className="my_photo" />
@@ -28,21 +34,52 @@ function MainBody() {
       <section className="home-about" id="about">
         <div className="decorative-orb" style={{ bottom: '-200px', right: '-200px', opacity: 0.08 }}></div>
         <h2 className="section-title">Professional Background</h2>
-        <div className="home-about-description">
-          <p>
-            With a deep passion for technology and education, I am a Computer
-            Science Lecturer, Full-Stack Developer, and AI Researcher dedicated to
-            bridging the gap between theory and real-world application. I hold a
-            BSc from Hawassa University and an MSc in Computer Science and Engineering
-            from ASTU, equipping me with a strong foundation in advanced computing.
-          </p>
-          <br />
-          <p>
-            My research focuses on Artificial Intelligence, Machine Learning, and
-            Deep Learning, exploring cutting-edge techniques to drive innovation
-            in intelligent systems. As a lecturer at Dilla University, I am
-            committed to mentoring the next generation of developers and researchers.
-          </p>
+        <div className="about-grid">
+          <div className="about-bio">
+            <p className="bio-lead">
+              With a deep passion for technology and education, I am a <span>Computer Science Lecturer</span>, <span>Full-Stack Developer</span>, and <span>AI Researcher</span> dedicated to bridging the gap between theory and real-world application.
+            </p>
+            <p className="bio-sub">
+              My research focuses on <span>Artificial Intelligence</span>, <span>Machine Learning</span>, and <span>Deep Learning</span>, exploring cutting-edge techniques to drive innovation in intelligent systems.
+            </p>
+          </div>
+
+          <div className="about-cards">
+            {/* Education Card */}
+            <div className="about-card glass-v2">
+              <div className="card-icon">
+                <Mortarboard size={24} color="var(--accent-primary)" />
+              </div>
+              <div className="card-content">
+                <h3>Education</h3>
+                <p><strong>MSc</strong> in Computer Science & Engineering (ASTU)</p>
+                <p><strong>BSc</strong> in Computer Science (Hawassa University)</p>
+              </div>
+            </div>
+
+            {/* Role Card */}
+            <div className="about-card glass-v2">
+              <div className="card-icon">
+                <Briefcase size={24} color="var(--accent-secondary)" />
+              </div>
+              <div className="card-content">
+                <h3>Current Role</h3>
+                <p>Lecturer & Researcher</p>
+                <p className="highlight">Dilla University</p>
+              </div>
+            </div>
+
+            {/* Expertise Card */}
+            <div className="about-card glass-v2">
+              <div className="card-icon">
+                <Award size={24} color="#f59e0b" />
+              </div>
+              <div className="card-content">
+                <h3>Research Focus</h3>
+                <p>AI, Deep Learning, Systems Engineering</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       {/* Services Section */}
