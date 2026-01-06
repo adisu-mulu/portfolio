@@ -20,7 +20,7 @@ function MainBody() {
             <a href="mailto:kulhabesh31@gmail.com" className="contact-pill glow-glow">
               <Envelope /> <span>kulhabesh31@gmail.com</span>
             </a>
-            <a href="tel:+251911111111" className="contact-pill glow-glow">
+            <a href="tel:+251924703531" className="contact-pill glow-glow">
               <Telephone /> <span>+251-924-703-531</span>
             </a>
           </div>

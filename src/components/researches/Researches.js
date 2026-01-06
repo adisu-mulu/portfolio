@@ -10,37 +10,53 @@ function ResearchAndPublications() {
       DOI: "10.1007/s42452-024-05633-7",
       url: "https://link.springer.com/article/10.1007/s42452-024-05633-7"
     },
+    {
+      researchName: "..",
+      description: "",
+      Publisher: "",
+      DOI: "",
+      url: "#"
+    },
+    {
+      researchName: "..",
+      description: "",
+      Publisher: "",
+      DOI: "",
+      url: "#"
+    }
   ];
 
   return (
-    <div className="researches-container">
-      {researches.map((research, index) => (
-        <div className="research-item-v2" key={index}>
-          <div className="research-journal-badge">
-            <JournalBookmarkFill size={20} className="me-2" /> Publication
-          </div>
-          <h3 className="research-title-v2">{research.researchName}</h3>
-          <p className="research-desc-v2">{research.description}</p>
-
-          <div className="research-divider"></div>
-
-          <div className="research-footer-v2">
-            <div className="research-meta-v2">
-              <div className="meta-item">
-                <Globe size={14} className="me-2 text-primary" />
-                <span><strong>Publisher:</strong> {research.Publisher}</span>
-              </div>
-              <div className="meta-item">
-                <Hash size={14} className="me-2 text-info" />
-                <span><strong>DOI:</strong> {research.DOI}</span>
-              </div>
+    <div className="slider-container-relative">
+      <div className="researches-track">
+        {researches.map((research, index) => (
+          <div className="research-item-v2" key={index}>
+            <div className="research-journal-badge">
+              <JournalBookmarkFill size={14} className="me-2" /> Publication
             </div>
-            <a href={research.url} target="_blank" rel="noopener noreferrer" className="btn-publication">
-              View Journal
-            </a>
+            <h3 className="research-title-v2">{research.researchName}</h3>
+            <p className="research-desc-v2">{research.description}</p>
+
+            <div className="research-divider"></div>
+
+            <div className="research-footer-v2">
+              <div className="research-meta-v2">
+                <div className="meta-item">
+                  <Globe size={14} className="me-2 text-primary" style={{ color: 'var(--accent-secondary)' }} />
+                  <span>{research.Publisher}</span>
+                </div>
+                <div className="meta-item">
+                  <Hash size={14} className="me-2 text-info" style={{ color: 'var(--accent-primary)' }} />
+                  <span>{research.DOI}</span>
+                </div>
+              </div>
+              <a href={research.url} target="_blank" rel="noopener noreferrer" className="btn-publication">
+                View Paper
+              </a>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

@@ -176,98 +176,123 @@ h4,
 }
 
 /* Research Section Styles - Journal V2 */
+/* Research Section Grid Layout */
 .home-publications {
   padding-top: 80px;
 }
 
-.researches-container {
+.researches-track {
   display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: 1100px;
+  gap: 30px;
+  max-width: 1300px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 60px 5%;
   margin: 0 auto;
-  padding: 60px 20px;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.researches-track::-webkit-scrollbar {
+  display: none;
+  /* Chrome/Safari */
 }
 
 .research-item-v2 {
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   background: var(--bg-card);
+  min-width: 380px;
+  scroll-snap-align: start;
+  height: auto;
+  /* Let flexbox stretch it */
+  flex: 1;
 }
 
+.research-item-v2:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
 
 .research-journal-badge {
   display: inline-flex;
   align-items: center;
-  padding: 6px 16px;
+  padding: 6px 14px;
   background: rgba(139, 92, 246, 0.1);
   color: var(--accent-primary);
   border-radius: 100px;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  align-self: flex-start;
 }
 
 .research-title-v2 {
-  font-size: 2.2rem;
-  font-weight: 900;
-  line-height: 1.2;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 15px;
   color: #fff;
 }
 
 .research-desc-v2 {
-  font-size: 1.15rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.6;
   color: var(--text-muted);
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+  flex-grow: 1;
 }
 
 .research-divider {
   height: 1px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.1), transparent);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .research-footer-v2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 
 .research-meta-v2 {
   display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .meta-item {
   display: flex;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 
 .btn-publication {
-  padding: 12px 30px;
+  padding: 10px 20px;
   background: var(--accent-secondary);
   color: #000;
   border-radius: 100px;
   text-decoration: none;
   font-weight: 700;
+  font-size: 0.85rem;
+  white-space: nowrap;
   transition: all 0.3s ease;
 }
 
 .btn-publication:hover {
   background: #fff;
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 5px 15px rgba(6, 182, 212, 0.3);
 }
 
 /* Glass-V3: The Minimalist */
@@ -734,7 +759,7 @@ h4,
   }
 
   .job-title {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .my_photo {
@@ -742,12 +767,16 @@ h4,
     height: 250px;
   }
 
+  .research-item-v2 {
+    min-width: 100%;
+  }
+
   .blogs-list {
     flex-direction: column;
     gap: 15px;
   }
 
-  .research-item-v2 {
+  .service-item {
     padding: 30px;
   }
 
