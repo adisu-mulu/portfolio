@@ -1,7 +1,6 @@
-// ProjectCard.js
-
 import React from "react";
-import "./projects.css";
+import { Github, ArrowUpRight } from "react-bootstrap-icons";
+
 const ProjectList = ({
   projectName,
   description,
@@ -11,33 +10,35 @@ const ProjectList = ({
   github,
 }) => {
   return (
-    <div className="project-card">
-      <div className="project-images">
-        <img src={backgroundImage} alt="" className="project-image" />
+    <div className="project-gallery-card">
+      {/* Visual Top */}
+      <div className="gallery-image-wrapper">
+        <img src={backgroundImage} alt={projectName} />
+        <div className="gallery-overlay"></div>
       </div>
-      <div className="project-body">
-        <div>
-          <h3 className="project-name">{projectName}</h3>
-          <p className="project-description">{description}</p>
+
+      {/* Content Bottom */}
+      <div className="gallery-content">
+        <span className="gallery-status-badge">{status}</span>
+        <h3 className="gallery-title">{projectName}</h3>
+        <p className="gallery-desc">{description}</p>
+
+        <div className="gallery-tech-row">
+          {languages.map((lang, i) => (
+            <span key={i} className="gallery-tag">{lang}</span>
+          ))}
         </div>
-        <div>
-          <div className="lang-demo">
-            <div className="project-languages">
-              <strong>Languages:</strong>
-              {languages.map((language) => (
-                <span className="lang-btn-text">{language}</span>
-              ))}
-            </div>
-          </div>
-          <div className="status-demo">
-            <p className="project-status">
-              Status: <i>{status}</i>
-            </p>
-            <a href={github} className="lang-btn-demo">
-              <i>Github</i>
+
+        {github && (
+          <div className="gallery-actions">
+            <a href={github} target="_blank" rel="noopener noreferrer" className="btn-gallery">
+              CODE <Github className="ms-2" />
+            </a>
+            <a href={github} target="_blank" rel="noopener noreferrer" className="btn-gallery-link">
+              <ArrowUpRight size={16} />
             </a>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

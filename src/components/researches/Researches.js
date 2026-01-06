@@ -1,50 +1,45 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import React from 'react';
+import { JournalBookmarkFill, Globe, Hash } from "react-bootstrap-icons";
 
 function ResearchAndPublications() {
-   const researches = [
-      {
-        researchName: "Prediction and classification of IoT sensor faults using hybrid deep learning model",
-        description: "The research develops a proactive approach to sensor fault prediction using a hybrid deep learning model, aiming to enhance the reliability and efficiency of IoT systems, allowing for preventive measures to be taken before faults have a detrimental impact.",
-        Publisher: "Springer Nature",
-        DOI: "https://doi.org/10.1007/s42452-024-05633-7",
-        url: "https://link.springer.com/article/10.1007/s42452-024-05633-7"
-      
-      },
-      // {
-      //   researchName: "Project 1",
-      //   description: "A brief description of Project 1.",
-      //   url: "somewhere"
-      // },
-      // {
-      //   researchName: "Project 1",
-      //   description: "A brief description of Project 1.",
-      //   url: "somewhere"
-      // },
-   
-      // Add more projects as needed
-    ];
+  const researches = [
+    {
+      researchName: "Prediction and classification of IoT sensor faults using hybrid deep learning model",
+      description: "A proactive deep learning approach to enhance IoT system reliability by predicting sensor faults before they impact critical operations.",
+      Publisher: "Springer Nature",
+      DOI: "10.1007/s42452-024-05633-7",
+      url: "https://link.springer.com/article/10.1007/s42452-024-05633-7"
+    },
+  ];
+
   return (
- 
-    <div className="d-flex flex-wrap justify-content-start">
+    <div className="researches-container">
       {researches.map((research, index) => (
-        <Card className="m-2" key={index} style={{ width: '100%' ,padding: '1px'}}>
-          <Card.Body>
-            <Card.Title style={{fontSize: '17px'}}>{research.researchName}</Card.Title>
-            <Card.Text style={{fontSize: '15px'}}>
-              {research.description}
-            </Card.Text>
-            <Card.Text>
-              <h6>Publisher: {research.Publisher}</h6>
-            </Card.Text>
-            <Card.Text>
-              <h6>DOI: {research.DOI}</h6>
-            </Card.Text>
-            <Button variant="primary" href={research.url} target="_blank">
-              Link
-            </Button>
-          </Card.Body>
-        </Card>
+        <div className="research-item-v2" key={index}>
+          <div className="research-journal-badge">
+            <JournalBookmarkFill size={20} className="me-2" /> Publication
+          </div>
+          <h3 className="research-title-v2">{research.researchName}</h3>
+          <p className="research-desc-v2">{research.description}</p>
+
+          <div className="research-divider"></div>
+
+          <div className="research-footer-v2">
+            <div className="research-meta-v2">
+              <div className="meta-item">
+                <Globe size={14} className="me-2 text-primary" />
+                <span><strong>Publisher:</strong> {research.Publisher}</span>
+              </div>
+              <div className="meta-item">
+                <Hash size={14} className="me-2 text-info" />
+                <span><strong>DOI:</strong> {research.DOI}</span>
+              </div>
+            </div>
+            <a href={research.url} target="_blank" rel="noopener noreferrer" className="btn-publication">
+              View Journal
+            </a>
+          </div>
+        </div>
       ))}
     </div>
   );
