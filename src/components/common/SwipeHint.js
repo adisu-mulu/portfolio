@@ -15,17 +15,12 @@ const SwipeHint = ({ scrollContainerRef }) => {
             }
         };
 
-        // Also hide if the user touches the container (immediate feedback)
-        const handleTouch = () => {
-            setIsVisible(false);
-        };
+
 
         container.addEventListener('scroll', handleScroll);
-        container.addEventListener('touchstart', handleTouch);
 
         return () => {
             container.removeEventListener('scroll', handleScroll);
-            container.removeEventListener('touchstart', handleTouch);
         };
     }, [scrollContainerRef]);
 
