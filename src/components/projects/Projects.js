@@ -1,10 +1,12 @@
 import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "react-bootstrap-icons";
 import ProjectList from "./projectList";
+import SwipeHint from "../common/SwipeHint";
 import "./projects.css";
 
 export default function Projects() {
   const sliderRef = useRef(null);
+
 
   const slideLeft = () => {
     if (sliderRef.current) {
@@ -63,6 +65,8 @@ export default function Projects() {
         <button className="nav-btn prev-btn" onClick={slideLeft}>
           <ChevronLeft size={24} />
         </button>
+
+        <SwipeHint scrollContainerRef={sliderRef} />
 
         <div className="projects-track" ref={sliderRef}>
           {projects.map((project, index) => (

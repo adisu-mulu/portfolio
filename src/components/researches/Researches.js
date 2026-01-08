@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { JournalBookmarkFill, Globe, Hash } from "react-bootstrap-icons";
+import SwipeHint from "../common/SwipeHint";
 
 function ResearchAndPublications() {
+  const scrollRef = useRef(null);
   const researches = [
     {
       researchName: "Prediction and classification of IoT sensor faults using hybrid deep learning model",
@@ -28,7 +30,8 @@ function ResearchAndPublications() {
 
   return (
     <div className="slider-container-relative">
-      <div className="researches-track">
+      <SwipeHint scrollContainerRef={scrollRef} />
+      <div className="researches-track" ref={scrollRef}>
         {researches.map((research, index) => (
           <div className="research-item-v2" key={index}>
             <div className="research-journal-badge">

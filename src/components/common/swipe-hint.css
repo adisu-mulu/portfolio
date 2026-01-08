@@ -1,0 +1,99 @@
+.swipe-hint-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    /* Allow clicks to pass through */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            transparent 50%,
+            rgba(0, 0, 0, 0.6) 100%);
+    opacity: 0;
+    animation: fadeIn 0.5s ease 1s forwards;
+    /* Delay the appearance slightly */
+}
+
+/* Only show on mobile */
+@media screen and (min-width: 769px) {
+    .swipe-hint-overlay {
+        display: none;
+    }
+}
+
+.swipe-hint-content {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.swipe-hand-icon {
+    animation: swipeAnimation 2s infinite ease-in-out;
+    color: var(--accent-primary, #8b5cf6);
+    filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.6));
+}
+
+.swipe-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 8px;
+    animation: pulseText 2s infinite ease-in-out;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+}
+
+@keyframes swipeAnimation {
+    0% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 0.8;
+    }
+
+    20% {
+        transform: translateX(-15px) rotate(-10deg);
+        /* Swipe left */
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 0.8;
+    }
+}
+
+@keyframes pulseText {
+
+    0%,
+    100% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
